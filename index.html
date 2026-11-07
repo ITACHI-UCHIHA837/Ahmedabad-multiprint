@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad Multiprint- Premium Printing Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom Gold Color Config for Tailwind */
+        :root {
+            --gold: #d4af37;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#d4af37',
+                        'gold-hover': '#b5952f',
+                        dark: '#111111',
+                        'dark-lighter': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-300 antialiased selection:bg-gold selection:text-black">
+
+    <!-- Top Bar -->
+    <div class="hidden md:flex justify-between items-center bg-black px-8 py-2 text-xs border-b border-gray-800">
+        <div class="flex space-x-6">
+            <span><i class="fas fa-map-marker-alt text-gold mr-2"></i> Ahmedabad, Gujarat, India</span>
+            <span><i class="fas fa-envelope text-gold mr-2"></i> info@ahmedabadmultiprint.com</span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-gold transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gold transition"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-gray-800 shadow-md">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gold rounded flex items-center justify-center text-black font-bold text-xl">
+                        AM
+                    </div>
+                    <div>
+                        <h1 class="text-white font-bold text-lg leading-tight tracking-wider">AHMEDABAD</h1>
+                        <p class="text-gold text-xs font-semibold tracking-widest">MULTIPRINT</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="#home" class="text-gold hover:text-white transition">HOME</a>
+                    <a href="#services" class="text-white hover:text-gold transition">SERVICES</a>
+                    <a href="#products" class="text-white hover:text-gold transition">PRODUCTS</a>
+                    <a href="#portfolio" class="text-white hover:text-gold transition">PORTFOLIO</a>
+                    <a href="#contact" class="text-white hover:text-gold transition">CONTACT US</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-gold text-black px-6 py-2.5 rounded font-bold text-sm hover:bg-gold-hover transition shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                        <i class="fas fa-paper-plane mr-2"></i> GET FREE QUOTE
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl hover:text-gold">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-24 pb-32 lg:pt-36 lg:pb-40 overflow-hidden flex items-center border-b border-gray-800">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1598425237654-4fb05f3254cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Printing Press" class="w-full h-full object-cover opacity-20" />
+            <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="max-w-2xl">
+                <h3 class="text-gold font-cursive italic text-2xl mb-4">We Provide</h3>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    PREMIUM PRINTING <br>
+                    <span class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-300">SOLUTIONS FOR EVERY BUSINESS</span>
+                </h2>
+                <p class="text-gray-400 mb-8 text-lg max-w-lg">
+                    From creative graphic design to premium printing and customized packaging, we deliver quality that helps your brand stand out.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-gold text-black px-6 py-3 rounded font-bold hover:bg-gold-hover transition shadow-lg">
+                        <i class="fas fa-check-circle mr-2"></i> GET FREE QUOTE
+                    </a>
+                    <a href="#" class="bg-transparent border border-gray-500 text-white px-6 py-3 rounded font-bold hover:border-gold hover:text-gold transition">
+                        <i class="fab fa-whatsapp text-green-500 mr-2"></i> WHATSAPP NOW
+                    </a>
+                    <a href="#portfolio" class="bg-transparent border border-gray-500 text-white px-6 py-3 rounded font-bold hover:border-gold hover:text-gold transition">
+                        <i class="fas fa-eye mr-2"></i> VIEW PORTFOLIO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white text-black">
+        <div class="container mx-auto px-4 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-2 uppercase tracking-wide">Our Services</h2>
+            <p class="text-gray-500 mb-12 max-w-2xl mx-auto">We provide all types of printing & branding solutions under one roof.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-pen-nib text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">GRAPHIC DESIGNING</h4>
+                    <p class="text-xs text-gray-500">Creative & Unique Designs</p>
+                </div>
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-print text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">PRINTING SERVICES</h4>
+                    <p class="text-xs text-gray-500">High Quality Printing</p>
+                </div>
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-box-open text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">PACKAGING SOLUTIONS</h4>
+                    <p class="text-xs text-gray-500">All Types of Packaging</p>
+                </div>
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-shopping-bag text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">PAPER CARRY BAGS</h4>
+                    <p class="text-xs text-gray-500">Premium Quality Bags</p>
+                </div>
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-bullseye text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">CORPORATE BRANDING</h4>
+                    <p class="text-xs text-gray-500">Build Your Brand Identity</p>
+                </div>
+                <!-- Service Item -->
+                <div class="flex flex-col items-center group cursor-pointer">
+                    <div class="w-20 h-20 rounded-full border border-gray-200 flex items-center justify-center mb-4 group-hover:border-gold group-hover:shadow-lg transition">
+                        <i class="fas fa-copy text-3xl text-dark group-hover:text-gold transition"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">OFFSET PRINTING</h4>
+                    <p class="text-xs text-gray-500">High Volume, Best Quality</p>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <a href="#services" class="inline-block bg-dark text-white px-8 py-3 rounded text-sm font-bold hover:bg-gold hover:text-black transition">
+                    VIEW ALL SERVICES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="py-20 bg-dark-lighter border-y border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-2 text-white uppercase tracking-wide">Featured Products</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">We offer a wide range of premium quality printed products.</p>
+            
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="filter-btn bg-gold text-black px-6 py-2 rounded font-bold text-sm transition" data-filter="all">All</button>
+                <button class="filter-btn bg-dark border border-gray-600 text-white px-6 py-2 rounded font-bold text-sm hover:border-gold hover:text-gold transition" data-filter="visiting">Visiting Cards</button>
+                <button class="filter-btn bg-dark border border-gray-600 text-white px-6 py-2 rounded font-bold text-sm hover:border-gold hover:text-gold transition" data-filter="invitation">Invitation Cards</button>
+                <button class="filter-btn bg-dark border border-gray-600 text-white px-6 py-2 rounded font-bold text-sm hover:border-gold hover:text-gold transition" data-filter="billbooks">Bill Books</button>
+                <button class="filter-btn bg-dark border border-gray-600 text-white px-6 py-2 rounded font-bold text-sm hover:border-gold hover:text-gold transition" data-filter="paperbags">Paper Bags</button>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="product-grid">
+                <!-- Visiting Card 1 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="visiting">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Premium+Cards" alt="Visiting Cards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Premium Visiting Cards</h4>
+                    </div>
+                </div>
+                <!-- Visiting Card 2 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="visiting">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Matte+Cards" alt="Visiting Cards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Matte Finish Cards</h4>
+                    </div>
+                </div>
+                <!-- Invitation Card 1 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="invitation">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Wedding+Invites" alt="Invitation Cards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Wedding Invites</h4>
+                    </div>
+                </div>
+                <!-- Invitation Card 2 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="invitation">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Event+Invites" alt="Invitation Cards" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Corporate Events</h4>
+                    </div>
+                </div>
+                <!-- Bill Book 1 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="billbooks">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Carbonless+Bills" alt="Bill Books" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Carbonless Bill Books</h4>
+                    </div>
+                </div>
+                <!-- Bill Book 2 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="billbooks">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Custom+Receipts" alt="Bill Books" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Custom Receipts</h4>
+                    </div>
+                </div>
+                <!-- Paper Bag 1 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="paperbags">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Luxury+Bags" alt="Paper Bags" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Luxury Paper Bags</h4>
+                    </div>
+                </div>
+                <!-- Paper Bag 2 -->
+                <div class="product-card bg-dark border border-gray-700 rounded overflow-hidden group hover:border-gold transition" data-category="paperbags">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden">
+                        <img src="https://placehold.co/400x300/222/d4af37?text=Kraft+Bags" alt="Paper Bags" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-4 text-center bg-black">
+                        <h4 class="text-sm font-semibold text-gray-200 group-hover:text-gold transition uppercase">Kraft Paper Bags</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & Stats -->
+    <section class="py-20 relative bg-black">
+        <!-- Abstract Gold Accent Line -->
+        <div class="absolute top-1/2 right-0 w-1/2 h-px bg-gradient-to-l from-gold to-transparent opacity-30 transform -translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Left Content -->
+                <div class="w-full lg:w-1/3">
+                    <h3 class="text-gold font-bold mb-2 uppercase tracking-wide">Why Choose Us</h3>
+                    <h2 class="text-3xl font-bold text-white mb-6">Delivering Excellence in Every Print</h2>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> Premium Print Quality
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> Latest Printing Technology
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> Fast Delivery
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> Affordable Prices
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> Expert Design Team
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <i class="fas fa-check-circle text-gold mr-3"></i> 100% Customer Satisfaction
+                        </li>
+                    </ul>
+                    <a href="#about" class="inline-block bg-gold text-black px-6 py-2.5 rounded text-sm font-bold hover:bg-gold-hover transition">
+                        KNOW MORE ABOUT US
+                    </a>
+                </div>
+                
+                <!-- Right Stats -->
+                <div class="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-4">
+                        <i class="fas fa-users-cog text-4xl text-gold mb-4"></i>
+                        <h4 class="text-4xl font-bold text-white mb-1">10+</h4>
+                        <p class="text-gray-400 text-sm uppercase">Years of Experience</p>
+                    </div>
+                    <div class="p-4">
+                        <i class="fas fa-smile text-4xl text-gold mb-4"></i>
+                        <h4 class="text-4xl font-bold text-white mb-1">5000+</h4>
+                        <p class="text-gray-400 text-sm uppercase">Happy Clients</p>
+                    </div>
+                    <div class="p-4">
+                        <i class="fas fa-file-alt text-4xl text-gold mb-4"></i>
+                        <h4 class="text-4xl font-bold text-white mb-1">50K+</h4>
+                        <p class="text-gray-400 text-sm uppercase">Projects Completed</p>
+                    </div>
+                    <div class="p-4">
+                        <i class="fas fa-medal text-4xl text-gold mb-4"></i>
+                        <h4 class="text-4xl font-bold text-white mb-1">99%</h4>
+                        <p class="text-gray-400 text-sm uppercase">Customer Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-lighter border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                
+                <!-- Let's Work Together -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 uppercase">Let's Work Together</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Have a project in mind? Get a free quote today and let's create something amazing together.</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="#" class="flex items-center justify-center bg-green-600 text-white px-6 py-3 rounded font-bold hover:bg-green-700 transition">
+                            <i class="fab fa-whatsapp mr-2 text-lg"></i> WHATSAPP NOW
+                        </a>
+                        <a href="tel:+919999999999" class="flex items-center justify-center bg-transparent border border-gray-600 text-white px-6 py-3 rounded font-bold hover:border-gold hover:text-gold transition">
+                            <i class="fas fa-phone-alt mr-2"></i> CALL NOW
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 uppercase">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full bg-dark border border-gray-700 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-gold transition">
+                            <input type="email" placeholder="Your Email" class="w-full bg-dark border border-gray-700 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-gold transition">
+                        </div>
+                        <input type="text" placeholder="Your Phone" class="w-full bg-dark border border-gray-700 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-gold transition">
+                        <textarea placeholder="Your Message" rows="3" class="w-full bg-dark border border-gray-700 rounded px-4 py-2 text-sm text-white focus:outline-none focus:border-gold transition"></textarea>
+                        <button type="submit" class="w-full bg-gold text-black px-6 py-2.5 rounded font-bold text-sm hover:bg-gold-hover transition">
+                            SEND MESSAGE <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Location Map -->
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 uppercase">Our Location</h3>
+                    <div class="bg-gray-800 rounded border border-gray-700 h-48 w-full overflow-hidden relative">
+                        <!-- Placeholder for Google Map embed -->
+                        <img src="https://placehold.co/600x400/111/d4af37?text=Map+Location+Placeholder" alt="Map Placeholder" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition cursor-pointer">
+                        <div class="absolute bottom-2 right-2 bg-white text-black text-xs px-2 py-1 rounded shadow">View on Google Maps</div>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-gold mt-1 mr-3 w-4"></i>
+                            <span>Ahmedabad, Gujarat, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gold mr-3 w-4"></i>
+                            <span>info@ahmedabadmultiprint.com</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-gray-800 text-sm text-gray-400">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo & Copyright -->
+                <div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div class="w-8 h-8 bg-gold rounded flex items-center justify-center text-black font-bold text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h1 class="text-white font-bold text-sm leading-none tracking-wider">AHMEDABAD</h1>
+                            <p class="text-gold text-[10px] font-semibold tracking-widest">MULTIPRINT</p>
+                        </div>
+                    </div>
+                    <p>&copy; 2026 Ahmedabad Multiprint. All Rights Reserved.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0 text-xs uppercase tracking-wider">
+                    <a href="#home" class="hover:text-gold transition">Home</a>
+                    <a href="#about" class="hover:text-gold transition">About</a>
+                    <a href="#services" class="hover:text-gold transition">Services</a>
+                    <a href="#portfolio" class="hover:text-gold transition">Portfolio</a>
+                    <a href="#contact" class="hover:text-gold transition">Contact</a>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex space-x-4">
+                    <a href="#" class="w-8 h-8 rounded bg-gray-900 border border-gray-800 flex items-center justify-center hover:bg-gold hover:text-black hover:border-gold transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-900 border border-gray-800 flex items-center justify-center hover:bg-gold hover:text-black hover:border-gold transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-900 border border-gray-800 flex items-center justify-center hover:bg-gold hover:text-black hover:border-gold transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="w-8 h-8 rounded bg-gray-900 border border-gray-800 flex items-center justify-center hover:bg-gold hover:text-black hover:border-gold transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Floating Button -->
+    <a href="#" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-[0_4px_14px_0_rgba(34,197,94,0.39)] hover:bg-green-600 hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // 1. Remove active state from all buttons
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-gold', 'text-black');
+                        b.classList.add('bg-dark', 'border', 'border-gray-600', 'text-white');
+                    });
+
+                    // 2. Add active state to clicked button
+                    btn.classList.remove('bg-dark', 'border', 'border-gray-600', 'text-white');
+                    btn.classList.add('bg-gold', 'text-black');
+
+                    // 3. Filter the cards based on data-category
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    productCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                            // Optional: Add a small fade-in animation
+                            card.animate([
+                                { opacity: 0, transform: 'scale(0.95)' },
+                                { opacity: 1, transform: 'scale(1)' }
+                            ], {
+                                duration: 300,
+                                easing: 'ease-out'
+                            });
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
